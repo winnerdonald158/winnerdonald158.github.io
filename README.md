@@ -10,11 +10,11 @@ Most of my projects focus on practical analysis, not just making charts look goo
 ##  Projects
 ### Fraud Risk & Transaction Analysis Dashboard
 This project focuses on analyzing financial transaction data to identify fraud risks, detect suspicious transaction behavior, and understand patterns commonly associated with fraudulent activities.The tools are used in this project is Postgresql and Powerbi.
-## One Key insight: Transaction Categories with High Fraud: Some transaction categories experience significantly higher fraud cases compared to others, showing possible weak points in fraud detection
+# One Key insight: Transaction Categories with High Fraud: Some transaction categories experience significantly higher fraud cases compared to others, showing possible weak points in fraud detection
 
 ### Customer Behavior & Churn Risk Analysis
 This project focuses on analyzing customer behavior in an e-commerce business to understand why customers engage with the platform but fail to convert into buyers, and why some customers eventually stop purchasing.The tools I used in this projects are Excel, Postgresql and Power BI.
-## One Key Insight:Some customers frequently visit and engage with the platform but make very low purchases, showing a conversion problem rather than a traffic problem.
+# One Key Insight:Some customers frequently visit and engage with the platform but make very low purchases, showing a conversion problem rather than a traffic problem.
 
 ### Stock Market Performance Analysis
 Financial analysis project focused on stock price movement, trading trends, volatility, and investor behavior.
