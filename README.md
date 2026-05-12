@@ -1,61 +1,40 @@
-# [Your Name] - Data Analysis Portfolio
+# Winner Donald - Data Analysis Portfolio
 
 Welcome! This repository contains the complete template for a professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
 
-## About This Portfolio Template
+## About Me
 
-This portfolio is designed to demonstrate skills in:
-- Data visualization and storytelling
-- Data modeling and analysis
-- Creating interactive, professional dashboards
-- Transforming complex data into actionable insights
+I’m a data analyst who enjoys turning messy data into clear, useful insights. I work mainly with SQL, Excel, Power BI, and data visualization tools to clean data, build dashboards, and solve real business problems.
+Most of my projects focus on practical analysis, not just making charts look good. I like working on datasets from areas like customer behavior, healthcare, finance, and business performance analysis because they usually come with real-world problems that need clear thinking and attention to detail.
 
-## 🚀 Projects
+##  Projects
+### Fraud Risk & Transaction Analysis Dashboard
+This project focuses on analyzing financial transaction data to identify fraud risks, detect suspicious transaction behavior, and understand patterns commonly associated with fraudulent activities.The tools are used in this project is Postgresql and Powerbi.
+One Key insight: Transaction Categories with High Fraud: Some transaction categories experience significantly higher fraud cases compared to others, showing possible weak points in fraud detection
 
-This template is set up to showcase your best work. You can easily customize the project cards in the `index.html` file.
+### Customer Behavior & Churn Risk Analysis
+This project focuses on analyzing customer behavior in an e-commerce business to understand why customers engage with the platform but fail to convert into buyers, and why some customers eventually stop purchasing.The tools I used in this projects are Excel, Postgresql and Power BI.
+One Key Insight:Some customers frequently visit and engage with the platform but make very low purchases, showing a conversion problem rather than a traffic problem.
 
-### Project Title One
-*A brief description of your project, the tools used, and the key insights derived.*
-
-### Project Title Two
-*A brief description of your project, the tools used, and the key insights derived.*
-
-### Project Title Three
-*A brief description of your project, the tools used, and the key insights derived.*
+### Stock Market Performance Analysis
+Financial analysis project focused on stock price movement, trading trends, volatility, and investor behavior.
 
 
-## 🛠️ Skills
+## Skills
 
 Update the `index.html` file to reflect your personal technical skillset. The template is organized into key categories:
 
-- **Data Visualization**: Power BI, Tableau, Matplotlib, etc.
-- **Data Analysis**: SQL, Python (Pandas), R, Excel, etc.
-- **Data Modeling**: Power Query, DAX, Star Schema Design, etc.
-- **Tools**: List any other relevant tools like Power BI Service, specific cloud platforms, etc.
+- Data Visualization: Power BI, Excel
+- Data Analysis: SQL, PostgreSQL, Excel
+- Data Modeling: Power Query, DAX, Relationships
+- Business Analytics: Trend Analysis, KPI Reporting, Fraud Analysis, Customer Segmentation 
 
-## 💡 How to Use This Template
+## Connect With Me
 
-Creating your own portfolio from this template is a simple, four-step process.
+📍 Abuja, Nigeria
 
-### 1. Create a New Repository from this Template
-Click the green **"Use this template"** button at the top of this repository page, then select **"Create a new repository"**.
+📧 winnerdonald158@gmail.com
 
-### 2. Name Your Repository for GitHub Pages
-This is the most important step. To turn your portfolio into a live website, you **must** name your new repository in the following format:
-`your-username.github.io`
-*(Replace `your-username` with your actual GitHub username.)*
+💼 LinkedIn: [www.linkedin.com/in/winner-donald]
 
-### 3. Customize Your Portfolio
-Open the `index.html` file and begin personalizing it. The file contains helpful `<!--💡UPDATE: ... -->` comments to guide you on where to change:
-- Your name and title
-- Social media links
-- The "About Me" section
-- Your project titles, descriptions, and links
-- Your list of skills
-
-### 4. Add Your Files
-- Upload your profile photo and project preview images to the `assets/images/` folder.
-- Upload your CV (e.g., in PDF format) to the `assets/` folder.
-- Create your favicon and add it to the root folder.
-
-Once you commit your changes, your new portfolio website will be live at `https://your-username.github.io` within a few minutes!
+💻 GitHub: [Your GitHub Link]
