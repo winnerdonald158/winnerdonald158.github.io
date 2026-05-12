@@ -1,7 +1,5 @@
 # Winner Donald - Data Analysis Portfolio
 
-Welcome! This repository contains the complete template for a professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
-
 ## About Me
 
 I’m a data analyst who enjoys turning messy data into clear, useful insights. I work mainly with SQL, Excel, Power BI, and data visualization tools to clean data, build dashboards, and solve real business problems.
@@ -24,8 +22,8 @@ Financial analysis project focused on stock price movement, trading trends, vola
 
 Update the `index.html` file to reflect your personal technical skillset. The template is organized into key categories:
 
-- Data Visualization: Power BI, Excel
-- Data Analysis: SQL, PostgreSQL, Excel
+- Data Visualization: Power BI, Excel,Apache Superset
+- Data Analysis: SQL, PostgreSQL, Excel,Apache Superset
 - Data Modeling: Power Query, DAX, Relationships
 - Business Analytics: Trend Analysis, KPI Reporting, Fraud Analysis, Customer Segmentation 
 
