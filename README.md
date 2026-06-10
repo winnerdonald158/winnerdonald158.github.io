@@ -2,8 +2,12 @@
 
 ## About Me
 
-I’m a data analyst who enjoys turning messy data into clear, useful insights. I work mainly with SQL, Excel, Power BI, and data visualization tools to clean data, build dashboards, and solve real business problems.
-Most of my projects focus on practical analysis, not just making charts look good. I like working on datasets from areas like customer behavior, healthcare, finance, and business performance analysis because they usually come with real-world problems that need clear thinking and attention to detail.
+I analyze data to help businesses understand customer behavior, reduce risk, improve performance, and make better decisions.
+
+My projects focus on real business problems across telecom, finance, healthcare, e-commerce, and marketing. Using SQL, PostgreSQL, Excel, Power BI, and Apache Superset, I turn raw data into clear insights that support decision-making.
+
+Whether it is identifying customer churn, analyzing fraud patterns, evaluating campaign performance, or uncovering healthcare trends, I enjoy finding the story behind the numbers and turning it into something useful for better decison amkind.
+
 
 ##  Projects
 ### Fraud Risk & Transaction Analysis Dashboard
