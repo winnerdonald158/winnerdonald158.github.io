@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Telecom Customer Churn Analysis</title>
 
 <style>
@@ -55,6 +56,13 @@ h2{
     margin-top:15px;
 }
 
+.insight-box{
+    background:#f8f9fb;
+    padding:20px;
+    border-radius:8px;
+    margin:15px 0;
+}
+
 img{
     width:100%;
     margin-top:20px;
@@ -63,28 +71,33 @@ img{
 </style>
 
 </head>
+
 <body>
 
 <h1>Telecom Customer Churn Analysis</h1>
 
 <div class="project-meta">
+
     <div class="meta-item">
         Tools:<br>
-        Excel, SQL, Power BI
+        PostgreSQL, Power BI
     </div>
 
     <div class="meta-item">
         Project Type:<br>
-        Customer Analytics
+        Telecom Analytics
     </div>
 
     <div class="meta-item">
         Focus:<br>
-        Customer Retention
+        Customer Churn & Retention
     </div>
+
 </div>
 
-<a href="https://github.com/winnerdonald158/telecom-customer-churn-analysis" target="_blank" class="btn">
+<a href="https://github.com/winnerdonald158/Telecom-Customer-Churn-Why-Customers-Leave-and-Which-Customers-Are-Most-at-Risk/tree/main"
+   target="_blank"
+   class="btn">
 View Detailed Report
 </a>
 
@@ -92,54 +105,170 @@ View Detailed Report
 Back To Portfolio
 </a>
 
+
 <h2>Project Overview</h2>
 
 <p>
-Customer churn is one of the biggest challenges faced by telecom companies.
-Losing existing customers directly impacts revenue and increases acquisition costs.
-This project analyzes customer data to identify churn patterns and uncover the factors that influence customer retention.
+Customer churn is an important challenge for telecom companies because losing
+existing customers can affect recurring revenue and increase the need to
+acquire new customers.
 </p>
+
+<p>
+In this project, I used PostgreSQL and Power BI to analyze 7,043 telecom
+customer records and understand where churn is concentrated, why customers
+reported leaving, when churn is most common, and which customer characteristics
+are associated with higher churn.
+</p>
+
+<p>
+I broke the analysis into five business questions covering churn severity,
+reported churn reasons, customer segments, tenure, payment methods, and
+service adoption.
+</p>
+
 
 <h2>Goal</h2>
 
 <div class="highlight-box">
-I identify the key drivers of customer churn and provide insights that can help telecom companies improve customer retention.
+
+<p>
+To understand the main patterns behind customer churn and identify customer
+groups that may need greater attention when planning retention efforts.
+</p>
+
 </div>
+
 
 <h2>Process</h2>
 
 <ul>
-<li>I cleaned and prepared customer records using Excel to ensure the dataset was ready for analysis.</li>
 
-<li>I used SQL to answer business questions around customer churn, contract types, payment methods, customer tenure, and service usage.</li>
+<li>
+I prepared and explored the telecom customer data before analysis.
+</li>
 
-<li>I segmented customers based on their behavior to identify groups with higher churn risk.</li>
+<li>
+I used PostgreSQL to calculate the overall churn rate and investigate
+customer churn categories and reported reasons.
+</li>
 
-<li>I analyzed how customer contracts, payment preferences, and service subscriptions influenced retention.</li>
+<li>
+I compared churn across contract type and internet type to identify
+higher-risk customer segments.
+</li>
 
-<li>I built an interactive Power BI dashboard to visualize churn patterns and support decision-making.</li>
+<li>
+I analyzed how churn changes across different customer tenure groups.
+</li>
 
-<li>I translated the findings into practical recommendations that could help improve customer retention.</li>
+<li>
+I compared stayed and churned customers across contract type, payment
+method, Online Security, and Online Backup.
+</li>
+
+<li>
+I identified the findings that were most relevant to customer retention
+and presented them through a Power BI dashboard.
+</li>
+
+<li>
+I translated the findings into recommendations focused on customer
+retention, onboarding, service adoption, and customer value.
+</li>
+
 </ul>
+
 
 <h2>Key Insights</h2>
 
+<div class="insight-box">
+
 <ul>
-<li>I discovered that customers on month-to-month contracts were significantly more likely to leave than customers on longer-term contracts.</li>
 
-<li>I found that customers with shorter tenure and higher monthly charges showed stronger churn tendencies.</li>
+<li>
+<strong>26.54% of customers had churned.</strong>
+1,869 out of 7,043 customers were classified as churned, meaning roughly
+1 in 4 customers had left.
+</li>
 
-<li>I identified payment methods that were associated with higher customer churn rates, suggesting possible customer experience issues.</li>
+<li>
+<strong>Competitor-related churn was the largest category.</strong>
+The Competitor category accounted for approximately 45% of churned
+customers, with reported reasons including better devices, better offers,
+more data, and higher download speeds.
+</li>
 
-<li>I observed that many customers left without providing clear reasons, making customer feedback an important area for improvement.</li>
+<li>
+<strong>Month-to-month customers had the highest churn rates.</strong>
+This pattern remained across the different internet types analyzed.
+</li>
 
-<li>I discovered that some recently acquired customers were already generating high revenue but were still leaving early, creating a retention opportunity.</li>
+<li>
+<strong>Newer customers were more likely to churn.</strong>
+Churn generally decreased as customer tenure increased, with shorter-tenure
+customers showing higher churn rates.
+</li>
 
-<li>I found that customers with fewer subscribed services generally had a higher likelihood of churning compared to customers using multiple services.</li>
+<li>
+<strong>Month-to-month customers showed higher churn proportions.</strong>
+Customers on longer-term contracts, particularly two-year contracts,
+showed higher proportions of customers who stayed.
+</li>
+
+<li>
+<strong>Mailed-check customers showed a higher churn proportion.</strong>
+Customers using credit cards showed a higher proportion of customers who
+stayed compared with the other payment methods analyzed.
+</li>
+
+<li>
+<strong>Service adoption differed between stayed and churned customers.</strong>
+Customers without Online Security and Online Backup showed higher churn
+proportions than customers who subscribed to these services.
+</li>
+
 </ul>
+
+</div>
+
+
+<h2>Key Retention Opportunities</h2>
+
+<ul>
+
+<li>
+Review competitor offerings, pricing, devices, and service benefits to
+understand where customers perceive greater value and identify areas where
+the company's own offering can be strengthened.
+</li>
+
+<li>
+Give greater retention attention to month-to-month customers and other
+higher-risk customer groups.
+</li>
+
+<li>
+Strengthen onboarding and early customer engagement for newer customers.
+</li>
+
+<li>
+Clearly communicate the benefits of Online Security, Online Backup, and
+other key services during onboarding and encourage adoption where appropriate.
+</li>
+
+<li>
+Monitor customer groups with higher churn proportions by payment method
+and other customer characteristics.
+</li>
+
+</ul>
+
+
 <h2>Dashboard Preview</h2>
 
-<img src="../assets/images/telecom-customer-churn-dashboard.png" alt="Telecom Dashboard">
+<img src="../assets/images/telecom-customer-churn-dashboard.png"
+     alt="Telecom Customer Churn Analysis Dashboard">
 
 </body>
 </html>
