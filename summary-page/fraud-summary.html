@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fraud Risk Transaction Analysis</title>
+
+<title>Fraud Detection & Transaction Risk Analysis</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
     max-width:1000px;
@@ -55,83 +59,234 @@ h2{
     margin-top:15px;
 }
 
+.insight-box{
+    background:#f8f9fb;
+    padding:20px;
+    border-radius:8px;
+    margin:15px 0;
+}
+
 img{
     width:100%;
     margin-top:20px;
     border-radius:10px;
 }
+
 </style>
 
 </head>
+
 <body>
 
-<h1>Fraud Risk Transaction Analysis</h1>
+<h1>Fraud Detection & Transaction Risk Analysis</h1>
 
 <div class="project-meta">
-    <div class="meta-item">
-        Tools:<br>
-        PostgreSQL, Power BI
-    </div>
 
-    <div class="meta-item">
-        Project Type:<br>
-         Financial Analytics
-    </div>
-
-    <div class="meta-item">
-        Focus:<br>
-         Investment Analysis
-    </div>
+```
+<div class="meta-item">
+    Tools:<br>
+    PostgreSQL, Power BI
 </div>
 
-<a href="https://github.com/winnerdonald158/Fraud-Risk-Transaction-Analysis-Dashboard" target="_blank" class="btn">
-View Detailed Report
-</a>
+<div class="meta-item">
+    Project Type:<br>
+    Fraud Analytics
+</div>
 
-<a href="../index.html" class="btn">
-Back To Portfolio
-</a>
+<div class="meta-item">
+    Focus:<br>
+    Transaction Risk & Fraud Detection
+</div>
+```
+
+</div>
+
+<a href="https://github.com/winnerdonald158/Fraud-Detection-Transaction-Risk-Analysis"
+target="_blank"
+class="btn">
+View Detailed Report </a>
+
+<a href="../index.html"
+class="btn">
+Back To Portfolio </a>
 
 <h2>Project Overview</h2>
 
 <p>
-Fraudulent transactions can lead to significant financial losses, damage customer trust,
-and expose businesses to operational risks. This project analyzes financial transaction
-data to uncover fraud patterns, identify suspicious customer behavior, and understand
-where fraud risks are concentrated across transaction categories and merchants.
+Fraudulent transactions can create financial losses and increase risk for
+businesses. Understanding where fraudulent activity is concentrated can help
+businesses prioritize monitoring and investigation.
+</p>
+
+<p>
+In this project, I used PostgreSQL and Power BI to analyze
+<strong>594,643 transaction records</strong> and investigate patterns associated
+with fraudulent activity across transaction categories, merchants, customers,
+and transaction-value ranges.
+</p>
+
+<p>
+I broke the analysis into five business questions to understand the scale of
+fraud, where fraudulent activity is concentrated, which merchants and
+customers are associated with repeated activity, and how fraud risk changes
+with transaction amount.
 </p>
 
 <h2>Goal</h2>
 
 <div class="highlight-box">
+
 <p>
-To identify high-risk transactions, detect suspicious customer behavior,
-understand fraud distribution patterns, and estimate the financial impact of fraud.
+To understand the main patterns in fraudulent transaction activity, identify
+areas of higher fraud risk, and provide actionable recommendations that can
+help prioritize fraud monitoring and investigation.
 </p>
+
 </div>
 
 <h2>Process</h2>
 
 <ul>
-<li>I prepared and structured transaction data for analysis.</li>
-<li>I used PostgreSQL to answer business questions related to fraud behavior and risk.</li>
-<li>I analyzed fraud concentration across merchants, customers, and transaction categories.</li>
-<li>I built an interactive Power BI dashboard to visualize fraud trends and financial impact.</li>
+
+<li>
+I prepared and explored the fraud transaction dataset before analysis.
+</li>
+
+<li>
+I used PostgreSQL to calculate the overall fraud rate and fraudulent
+transaction value.
+</li>
+
+<li>
+I analyzed fraudulent activity across transaction categories using fraud
+volume, fraud rate, and fraudulent transaction value.
+</li>
+
+<li>
+I examined merchant-level fraud activity to identify merchants associated
+with unusually high fraud rates, volumes, and transaction values.
+</li>
+
+<li>
+I investigated customers associated with repeated transactions labeled as
+fraudulent.
+</li>
+
+<li>
+I analyzed transaction-value ranges to understand how fraud rates change as
+transaction amounts increase.
+</li>
+
+<li>
+I translated the findings into recommendations focused on fraud monitoring,
+screening, and investigation.
+</li>
+
+<li>
+I am using the findings to develop a Power BI dashboard that communicates the
+main fraud-risk patterns clearly.
+</li>
+
 </ul>
 
 <h2>Key Insights</h2>
 
+<div class="insight-box">
+
 <ul>
-<li>I identified merchants that appeared repeatedly in fraudulent transactions.</li>
-<li>I found that many fraud attempts involved small transactions, suggesting fraudsters were testing stolen payment methods</li>
-<li>I noticed certain customers appeared multiple times in suspicious activity patterns.</li>
-<li>Fraud was spread across several transaction categories rather than being limited to one type of transaction.</li>
-<li>My analysis showed that fraudulent transactions resulted in measurable revenue losses and increased operational risk for the business.</li>
+
+<li>
+<strong>7,200 transactions were labeled fraudulent.</strong>
+Out of 594,643 transactions, fraudulent transactions represented approximately
+<strong>1.21%</strong> of all transactions.
+</li>
+
+<li>
+<strong>Approximately $3.82M was associated with fraudulent transactions.</strong>
+This provides an indication of the financial value represented by transactions
+labeled fraudulent in the dataset.
+</li>
+
+<li>
+<strong>Fraud risk differs across transaction categories.</strong>
+Leisure recorded the highest fraud rate, Travel had the highest fraudulent
+transaction value, while Sports & Toys had the highest number of fraudulent
+transactions.
+</li>
+
+<li>
+<strong>Fraud activity is concentrated across certain merchants.</strong>
+Different merchants showed different combinations of fraud volume, fraud rate,
+and fraudulent transaction value.
+</li>
+
+<li>
+<strong>Some customers were associated with repeated fraudulent activity.</strong>
+Repeated activity was observed particularly within categories such as Travel
+and Sports & Toys.
+</li>
+
+<li>
+<strong>Fraud rates increased sharply with transaction amount.</strong>
+Transactions below $100 had substantially lower fraud rates, while transactions
+above $300 showed much higher fraud rates in this dataset.
+</li>
+
+</ul>
+
+</div>
+
+<h2>Key Fraud-Prevention Opportunities</h2>
+
+<ul>
+
+<li>
+Apply additional screening and monitoring to higher-value transactions,
+particularly transactions above approximately $300.
+</li>
+
+<li>
+Prioritize merchants with unusually high fraud rates, fraudulent transaction
+volumes, or fraudulent transaction values for investigation.
+</li>
+
+<li>
+Strengthen monitoring within categories where significant fraudulent activity
+was observed, including Leisure, Travel, and Sports & Toys.
+</li>
+
+<li>
+Use behavioral analytics to identify customers associated with repeated
+suspicious transaction patterns.
+</li>
+
+<li>
+Combine transaction amount, merchant activity, category, customer behavior,
+and other available signals when assessing transaction risk.
+</li>
+
+<li>
+Monitor fraud rate and fraudulent transaction value regularly to evaluate the
+effect of fraud-prevention measures.
+</li>
+
 </ul>
 
 <h2>Dashboard Preview</h2>
 
-<img src="../assets/images/fraud-risk-dashboard.png" alt="Fraud Risk Dashboard">
+<p>
+The Power BI dashboard for this project is currently being developed.
+The final dashboard will present the main fraud-risk findings from the SQL
+analysis through KPIs and focused visual analysis.
+</p>
+
+<!-- Add the dashboard image here when the dashboard is completed.
+
+<img src="../assets/images/fraud-detection-dashboard.png"
+     alt="Fraud Detection & Transaction Risk Dashboard">
+
+-->
 
 </body>
+
 </html>
