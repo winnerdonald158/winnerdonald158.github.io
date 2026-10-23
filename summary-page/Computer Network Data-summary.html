@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Network Data Usage Analysis</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #1c2f5a;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 20px;
+            background: #f5f7fa;
+            border-radius: 10px;
+        }
+
+        .meta-item {
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1c2f5a;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            margin: 8px 10px 8px 0;
+        }
+
+        .highlight-box,
+        .insight-box {
+            background: #f8f9fb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .highlight-box {
+            border-left: 5px solid #1c2f5a;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Computer Network Data Usage Analysis</h1>
+
+<div class="project-meta">
+    <div class="meta-item">
+        Tools:<br>
+        PostgreSQL, Power BI
+    </div>
+
+    <div class="meta-item">
+        Project Type:<br>
+        Network Usage Analytics
+    </div>
+
+    <div class="meta-item">
+        Focus:<br>
+        Traffic Patterns & Process Analysis
+    </div>
+</div>
+
+<a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn">
+    View Detailed Report
+</a>
+
+<a href="../index.html" class="btn">
+    Back to Portfolio
+</a>
+
+<h2>Project Overview</h2>
+
+<p>
+My computer had been consuming a significant amount of internet data.
+I used Windows SRUM records, PostgreSQL, and Power BI to investigate
+which processes were associated with network traffic, how much data
+was received and sent, and when network activity was recorded most often.
+</p>
+
+<p>
+I organized the analysis around five business questions, using SQL to
+examine traffic by process, direction, hour, and month. I then used
+Power BI to present the findings in a business-focused dashboard.
+</p>
+
+<h2>Goal</h2>
+
+<div class="highlight-box">
+    <p>
+        To understand the main sources and patterns of recorded network
+        traffic, identify processes associated with higher usage, and
+        highlight areas that require further investigation.
+    </p>
+</div>
+
+<h2>Process</h2>
+
+<ul>
+    <li>I extracted Windows SRUM data using SrumECmd.</li>
+    <li>I prepared the network usage data for analysis.</li>
+    <li>I loaded the data into PostgreSQL and used SQL to investigate
+        total traffic, received data, sent data, and time-based patterns.</li>
+    <li>I used process mapping to make executable paths easier to interpret.</li>
+    <li>I distinguished records with genuinely blank executable information
+        from records that did not match the process-mapping table.</li>
+    <li>I used the findings to build a Power BI dashboard and identify
+        priorities for further investigation.</li>
+</ul>
+
+<h2>Key Insights</h2>
+
+<div class="insight-box">
+    <ul>
+        <li>
+            <strong>159.44 GB of total network traffic was recorded.</strong>
+            The dashboard showed 134.99 GB received and 24.44 GB sent.
+        </li>
+
+        <li>
+            <strong>79.81 GB had no recorded executable name.</strong>
+            This made unidentified network activity the main priority
+            for further investigation.
+        </li>
+
+        <li>
+            <strong>Google Chrome was a major identifiable contributor.</strong>
+            It accounted for approximately 39.23 GB received and 8.65 GB sent.
+        </li>
+
+        <li>
+            <strong>Early-morning activity stood out.</strong>
+            The hourly record-count chart showed its highest displayed
+            count at 4 AM, with 1,857 records.
+        </li>
+
+        <li>
+            <strong>Unidentified activity and Google Chrome showed
+            significant activity over time.</strong>
+            Their patterns were examined across July, August, and September 2026.
+        </li>
+    </ul>
+</div>
+
+<h2>Investigation Priorities</h2>
+
+<ul>
+    <li>Investigate network records without a recorded executable name.</li>
+    <li>Compare early-morning network records with available application
+        timeline and resource information.</li>
+    <li>Review the contribution of browser and VPN-related processes.</li>
+    <li>Continue monitoring traffic volume and record frequency over time.</li>
+</ul>
+
+<h2>Dashboard Preview</h2>
+
+<img src="../assets/images/Network Data Usage Dashboard.png"
+     alt="Power BI dashboard analysing computer network data usage">
+
+</body>
+</html>
